@@ -1,3 +1,8 @@
+@font-face {
+  font-family: montreal;
+  src: url(../fonts/PPNeueMontreal-Medium.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +20,33 @@ html, body {
   background-size: cover;
   background-attachment: fixed;
 
+  font-family: montreal;
+
   @media (min-width: 1280px) {
     background: url("../img/landing/screen.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+  }
+}
+
+.maintext {
+  text-align: justify;
+  padding: 1rem;
+
+  color: white;
+
+  @media (min-width: 768px) {
+    max-width: 60%;
+
+    padding: 1rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 45%;
+
+    padding-top: 2rem;
+    padding-left: 3rem;
   }
 }
