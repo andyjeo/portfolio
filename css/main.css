@@ -32,12 +32,14 @@ html, body {
 }
 
 .maintext {
+  display: none;
   text-align: justify;
   padding: 1rem;
 
   color: white;
 
   @media (min-width: 768px) {
+    display: inherit;
     max-width: 60%;
 
     padding: 1rem;
@@ -48,6 +50,17 @@ html, body {
 
     padding-top: 2rem;
     padding-left: 3rem;
+  }
+}
+
+.maintextmobile {
+  text-align: justify;
+  padding: 1rem;
+
+  color: white;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 
