@@ -74,6 +74,7 @@ html, body {
   font-size: 1rem;
 
   color: white;
+  text-decoration: none;
 
   @media (min-width: 768px) {
     display: flex; /* Add this line */
@@ -92,6 +93,11 @@ html, body {
     padding-bottom: 2rem;
     padding-left: 3rem;
   }
+}
+
+.items {
+  color: white;
+  text-decoration: none;
 }
 
 .view {
