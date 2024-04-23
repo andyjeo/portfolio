@@ -50,3 +50,41 @@ html, body {
     padding-left: 3rem;
   }
 }
+
+.navmenu {
+  position: absolute; /* or use 'fixed' if you want it to stay at the bottom even when scrolling */
+  bottom: 0;
+
+  text-align: justify;
+  padding: 1rem;
+
+  font-size: 1rem;
+
+  color: white;
+
+  @media (min-width: 768px) {
+    display: flex; /* Add this line */
+    flex-direction: row; /* Add this line */
+    justify-content: space-between;
+
+    max-width: 60%;
+    padding: 1rem;
+
+    font-size: 1rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 45%;
+
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+  }
+}
+
+.view {
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    margin-right: 1rem;
+  }
+}
