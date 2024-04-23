@@ -34,7 +34,6 @@ html, body {
 .maintext {
   display: none;
   text-align: justify;
-  padding: 1rem;
 
   color: white;
 
@@ -48,6 +47,7 @@ html, body {
   @media (min-width: 1280px) {
     max-width: 45%;
 
+    padding: 0;
     padding-top: 2rem;
     padding-left: 3rem;
   }
@@ -64,14 +64,36 @@ html, body {
   }
 }
 
+.photo {
+  display: none;
+  text-align: justify;
+
+  color: white;
+
+  @media (min-width: 768px) {
+    display: inherit;
+    max-width: 60%;
+
+    padding: 1rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 45%;
+
+    padding: 0;
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+}
+
 .navmenu {
   position: absolute; /* or use 'fixed' if you want it to stay at the bottom even when scrolling */
   bottom: 0;
 
   text-align: justify;
-  padding: 1rem;
 
   font-size: 1rem;
+  padding: 1rem;
 
   color: white;
   text-decoration: none;
@@ -82,7 +104,6 @@ html, body {
     justify-content: space-between;
 
     max-width: 60%;
-    padding: 1rem;
 
     font-size: 1rem;
   }
@@ -90,6 +111,7 @@ html, body {
   @media (min-width: 1280px) {
     max-width: 45%;
 
+    padding: 0;
     padding-bottom: 2rem;
     padding-left: 3rem;
   }
