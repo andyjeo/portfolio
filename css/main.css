@@ -87,6 +87,9 @@ html, body {
 }
 
 .navmenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   position: absolute; /* or use 'fixed' if you want it to stay at the bottom even when scrolling */
   bottom: 0;
 
@@ -103,17 +106,25 @@ html, body {
     flex-direction: row; /* Add this line */
     justify-content: space-between;
 
-    max-width: 60%;
+    max-width: 100%;
 
     font-size: 1rem;
   }
 
   @media (min-width: 1280px) {
-    max-width: 45%;
+    max-width: 100%;
 
     padding: 0;
     padding-bottom: 2rem;
-    padding-left: 3rem;
+  }
+}
+
+.mainitems {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  @media (min-width: 1280px) {
+    padding-left: 2rem;
   }
 }
 
@@ -131,5 +142,20 @@ html, body {
 
   @media (min-width: 768px) {
     margin-right: 1rem;
+  }
+}
+
+.hire {
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    margin-right: 1rem;
+  }
+}
+
+.right {
+  display: none;
+  @media (min-width: 1280px) {
+    display: flex;
   }
 }
