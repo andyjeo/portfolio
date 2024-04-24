@@ -144,6 +144,7 @@ html, body {
 
   @media (min-width: 768px) {
     margin-right: 1rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -152,6 +153,7 @@ html, body {
 
   @media (min-width: 768px) {
     margin-right: 1rem;
+    margin-bottom: 0rem;
   }
 }
 
