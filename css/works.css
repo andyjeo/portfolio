@@ -1,0 +1,66 @@
+@font-face {
+  font-family: montreal;
+  src: url(../fonts/PPNeueMontreal-Medium.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  height: 100%;
+  padding: 1rem;
+
+  font-family: montreal;
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 1280px) {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.navmenu {
+  display: flex;
+  color: white;
+}
+
+.items {
+  margin-right: 1rem;
+  margin-right;
+  cursor: pointer;
+}
+
+.grids {
+  padding-top: 1rem;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  padding-bottom: 1rem;
+  @media (min-width: 1280px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.imgs {
+  width: 100%;
+  border-radius: 0px;
+  margin-bottom: 2px;
+  @media (min-width: 768px) {
+    margin: 5px;
+    width: auto;
+    height: 500px;
+  }
+  @media (min-width: 1280px) {
+    margin: 5px;
+    width: auto;
+    height: 800px;
+  }
+}
