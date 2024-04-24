@@ -1,0 +1,100 @@
+@font-face {
+  font-family: montreal;
+  src: url(../fonts/PPNeueMontreal-Medium.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
+.container {
+  height: 100%;
+  padding: 1rem;
+
+  font-family: montreal;
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 1280px) {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.navmenu {
+  display: flex;
+  color: white;
+}
+
+.items {
+  margin-right: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.items:hover {
+  text-decoration: underline;
+}
+
+.grids {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-auto-rows: 400px;
+  grid-auto-flow: dense;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media (min-width: 1280px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.imgs {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+  @media (min-width: 768px) {
+   
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1280px) {
+    
+  }
+}
+
+.grids > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grids > div > imgs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.grids .wide {
+  grid-column: span 2;
+}
+
+.grids .tall {
+  grid-row: span 2;
+}
+
+.grids .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
