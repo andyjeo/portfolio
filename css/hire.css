@@ -46,4 +46,12 @@ html, body {
 .email {
   padding-top: 2rem;
   color: white;
+  font-size: 1rem;
+}
+
+.emailaddress {
+  font-size: 1.1rem;
+  margin-left: 0.1rem;
+
+  color: white;
 }
